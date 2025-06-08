@@ -38,11 +38,11 @@ This script will magically bring back your usual suspects:
     ```
 2.  **Make the script executable:**
     ```bash
-    chmod +x setup.sh
+    chmod +x oooooooooooooooooooooops.sh
     ```
 3.  **Run the script:**
     ```bash
-    ./setup.sh
+    ./oooooooooooooooooooooops.sh
     ```
 4.  **Grab a coffee** (or something stronger). This might take a bit.
 5.  **Reboot your machine** after the script finishes for all changes (especially Docker group membership) to take full effect.
