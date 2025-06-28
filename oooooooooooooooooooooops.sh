@@ -81,6 +81,13 @@ echo "deb [signed-by=/etc/apt/keyrings/hashicorp-archive-keyring.gpg] https://ap
 sudo apt update
 sudo apt install -y terraform
 
+# Aggiunta di Node e Gemini CLI
+curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.40.3/install.sh | bash
+\. "$HOME/.nvm/nvm.sh"
+# Download and install Node.js:
+nvm install 22
+npm install -g @google/gemini-cli
+
 # Aggiunta alias in bashrc
 echo "alias vsc='code . && exit'" >> ~/.bashrc
 # Verifica delle installazioni
@@ -106,9 +113,11 @@ echo "Verifica l'installazione di VSCode con: snap info code"
 snap info code 
 echo "Verifica l'installazione di Terraform con: terraform --version"
 terraform --version
+echo "Verifica l'installazione di Node con: node --v"
+node -v # Should print "v22.17.0".
+nvm current # Should print "v22.17.0".
 
 # Sezione per l'installazione delle estensioni di VSCode
-code --install-extension GitHub.copilot
 code --install-extension HashiCorp.terraform
 code --install-extension ms-azuretools.vscode-docker
 code --install-extension Gruntfuggly.todo-tree
@@ -118,6 +127,13 @@ code --install-extension ms-python.python
 code --install-extension ms-python.vscode-pylance
 code --install-extension Shinotatwu-DS.file-tree-generator
 code --install-extension ms-python.black-formatter
+# code --install-extension GitHub.copilot
+code --install-extension Google.geminicodeassist
 
 echo "Fatto!"
+read -p "Vuoi configurare Gemini? [Y/n] " risposta
+if [[ "$risposta" == "Y" || "$risposta" == "y" ]]; then
+  gemini
+fi
+
 
