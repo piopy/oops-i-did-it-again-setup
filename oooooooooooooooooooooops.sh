@@ -113,9 +113,8 @@ echo "Verifica l'installazione di VSCode con: snap info code"
 snap info code 
 echo "Verifica l'installazione di Terraform con: terraform --version"
 terraform --version
-echo "Verifica l'installazione di Node con: node --v"
-node -v # Should print "v22.17.0".
-nvm current # Should print "v22.17.0".
+echo "Verifica l'installazione di Node con: node -v && npm -v"
+node -v && npm -v
 
 # Sezione per l'installazione delle estensioni di VSCode
 code --install-extension HashiCorp.terraform
