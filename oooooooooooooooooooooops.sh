@@ -126,8 +126,9 @@ code --install-extension ms-python.python
 code --install-extension ms-python.vscode-pylance
 code --install-extension Shinotatwu-DS.file-tree-generator
 code --install-extension ms-python.black-formatter
-# code --install-extension GitHub.copilot
-code --install-extension Google.geminicodeassist
+code --install-extension GitHub.copilot
+code --install-extension ms-toolsai.datawrangler
+# code --install-extension Google.geminicodeassist
 
 echo "Fatto!"
 read -p "Vuoi configurare Gemini? [Y/n] " risposta
