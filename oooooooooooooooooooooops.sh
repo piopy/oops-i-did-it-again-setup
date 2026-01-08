@@ -13,6 +13,9 @@ sudo apt install -y wget curl apt-transport-https ca-certificates software-prope
 # Installazione di Utilità di Rete
 sudo apt install -y net-tools iproute2 nmap
 
+# Installazione di ncdu per future analisi su FS
+sudo apt install -y ncdu
+
 # Installazione di Snapd
 sudo apt install -y snapd
 
