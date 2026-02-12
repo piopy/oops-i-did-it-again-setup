@@ -131,6 +131,7 @@ code --install-extension Shinotatwu-DS.file-tree-generator
 code --install-extension ms-python.black-formatter
 code --install-extension GitHub.copilot
 code --install-extension ms-toolsai.datawrangler
+code --install-extension emilianox.flow-jira-commit-prefix
 # code --install-extension Google.geminicodeassist
 
 echo "Fatto!"
