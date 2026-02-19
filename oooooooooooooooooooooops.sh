@@ -131,8 +131,13 @@ code --install-extension Shinotatwu-DS.file-tree-generator
 code --install-extension ms-python.black-formatter
 code --install-extension GitHub.copilot
 code --install-extension ms-toolsai.datawrangler
-code --install-extension emilianox.flow-jira-commit-prefix
+code --install-extension mhutchie.git-graph
+
 # code --install-extension Google.geminicodeassist
+read -p "Usi Jira? [Y/n] " risposta
+if [[ "$risposta" == "Y" || "$risposta" == "y" ]]; then
+  code --install-extension emilianox.flow-jira-commit-prefix
+fi
 
 echo "Fatto!"
 read -p "Vuoi configurare Gemini? [Y/n] " risposta
